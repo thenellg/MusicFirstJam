@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,8 +17,14 @@ public class PlayerController : MonoBehaviour
     bool jump = false;
     bool crouch = false;
 
+    //Door variables
+    public GameObject buttonInteract;
+    bool inDoor = false;
+    int sceneChange = 0;
+
     public void Awake()
     {
+        buttonInteract.SetActive(false);
         /*
         //Trying the new input system. Doesn't work for continuous movement yet so I'm
         //scrapping the idea
@@ -44,7 +52,15 @@ public class PlayerController : MonoBehaviour
         {
             ChangeInstruments();
         }
-        
+
+        if (inDoor == true)
+        {
+            if (Input.GetButtonDown("Fire3"))
+            {
+                //get scene number from door script and change to scene
+                SceneManager.LoadScene(sceneChange);
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -63,6 +79,25 @@ public class PlayerController : MonoBehaviour
         else
         {
             objectController.GetComponent<BlockChanging>().showingGroup = 1;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Door")
+        {
+            buttonInteract.SetActive(true);
+            sceneChange = collision.gameObject.GetComponent<Door>().sceneNumber;
+            inDoor = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Door")
+        {
+            buttonInteract.SetActive(false);
+            inDoor = false;
         }
     }
 
