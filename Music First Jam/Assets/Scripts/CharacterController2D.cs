@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -132,6 +133,7 @@ public class CharacterController2D : MonoBehaviour
 		}
 	}
 
+	public GameObject child;
 
 	private void Flip()
 	{
@@ -145,7 +147,20 @@ public class CharacterController2D : MonoBehaviour
 		transform.localScale = theScale;
 		*/
 
+		//Make a new object and move child
+		GameObject newObject = new GameObject("Temp");
+		changeParent(newObject);
+
 		transform.Rotate(0f, 180f, 0f);
 
+		//Move child and destroy empty GameObject
+		changeParent(gameObject);
+		Destroy(newObject);
+
 	}
+
+	void changeParent(GameObject newParent)
+    {
+		child.transform.parent = newParent.transform;
+    }
 }
