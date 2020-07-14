@@ -7,6 +7,7 @@ public class EnemyDamage : MonoBehaviour
     // Start is called before the first frame update
     public int health = 100;
     public GameObject spoils;
+    public int damageToPlayer = 0;
 
     public void Start()
     {

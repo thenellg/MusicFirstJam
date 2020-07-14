@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5776715359836661174}
   - component: {fileID: 3731323382596082095}
   - component: {fileID: 4270275333298107499}
+  - component: {fileID: 5995186507494789375}
   m_Layer: 0
   m_Name: eighth_note-attack
   m_TagString: Attack
@@ -28,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730311527968039227}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.45, y: 1.98, z: -0.33984375}
-  m_LocalScale: {x: 2.059712, y: 2.059712, z: 2.059712}
+  m_LocalPosition: {x: -3.5081606, y: 0.13354, z: -0.33984375}
+  m_LocalScale: {x: 0.5093462, y: 0.5093462, z: 0.5093462}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,8 +73,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2145044063
   m_SortingLayer: 2
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b4dc8cb653992dc42ad0b896a4bd19af, type: 3}
+  m_SortingOrder: 11
+  m_Sprite: {fileID: 1768679433190182986, guid: 1d7ad77a897be144697e894fade8ead4,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -136,3 +138,22 @@ MonoBehaviour:
   damage: 50
   speed: 15
   rb: {fileID: 5776715359836661174}
+--- !u!95 &5995186507494789375
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730311527968039227}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4a06ff67f08f17c4f87ec2ee5028db46, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
