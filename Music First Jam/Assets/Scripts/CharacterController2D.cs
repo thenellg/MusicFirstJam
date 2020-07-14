@@ -20,6 +20,9 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
 
+	public int coyoteTimer = 3;
+	public int numJumps = 0;
+
 	[Header("Events")]
 	[Space]
 
@@ -42,7 +45,16 @@ public class CharacterController2D : MonoBehaviour
 			OnCrouchEvent = new BoolEvent();
 	}
 
-	private void FixedUpdate()
+    private void Update()
+    {
+		if (coyoteTimer > 0 && m_Grounded == false)
+		{
+			//m_Grounded = true;
+			coyoteTimer--;
+		}
+	}
+
+    private void FixedUpdate()
 	{
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
@@ -57,7 +69,10 @@ public class CharacterController2D : MonoBehaviour
 				m_Grounded = true;
 				if (!wasGrounded)
 					OnLandEvent.Invoke();
+				numJumps = 0;
+				coyoteTimer = 3;
 			}
+
 		}
 	}
 
@@ -124,13 +139,32 @@ public class CharacterController2D : MonoBehaviour
 				Flip();
 			}
 		}
+		if (m_Grounded == false)
+        {
+			coyoteTimer = 3;
+        }
 		// If the player should jump...
-		if (m_Grounded && jump)
+		if ((m_Grounded && jump) || (coyoteTimer > 0 && jump)) 
 		{
-			// Add a vertical force to the player.
-			m_Grounded = false;
-			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			if (numJumps < 2)
+			{
+				// Add a vertical force to the player.
+				m_Grounded = false;
+
+				if (numJumps == 1)
+				{
+					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce/2));
+				}
+				else
+				{
+					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+				}
+
+				numJumps++;
+			}
 		}
+        
+
 	}
 
 	public GameObject child;
