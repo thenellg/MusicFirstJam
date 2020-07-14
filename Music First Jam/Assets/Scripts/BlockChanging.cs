@@ -38,7 +38,7 @@ public class BlockChanging : MonoBehaviour
             group3.SetActive(false);
             group4.SetActive(false);
             musicChange(1);
-            //UIChange(1);
+            UIChange(1);
         }
         else if (showingGroup == 2)
         {
@@ -47,7 +47,7 @@ public class BlockChanging : MonoBehaviour
             group3.SetActive(false);
             group4.SetActive(false);
             musicChange(2);
-            //UIChange(2);
+            UIChange(2);
         }
         else if (showingGroup == 3)
         {
@@ -56,7 +56,7 @@ public class BlockChanging : MonoBehaviour
             group3.SetActive(true);
             group4.SetActive(false);
             musicChange(3);
-            //UIChange(3);
+            UIChange(3);
         }
         else
         {
@@ -65,7 +65,7 @@ public class BlockChanging : MonoBehaviour
             group3.SetActive(false);
             group4.SetActive(true);
             musicChange(4);
-            //UIChange(4);
+            UIChange(4);
         }
 
     }
