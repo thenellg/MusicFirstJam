@@ -12,6 +12,7 @@ public class FireMusic : MonoBehaviour
     public GameObject Note4;
     int noteNum = 1;
     public GameObject objectController;
+    public GameObject musicBank;
 
     // Update is called once per frame
     void Update()
@@ -26,21 +27,27 @@ public class FireMusic : MonoBehaviour
 
     void shootMusic()
     {
+        musicBank.GetComponent<musicBank>().sendSound();
+
         if (noteNum == 1)
         {
             Instantiate(Note1, firePoint.position, firePoint.rotation);
+            Note1.GetComponent<AudioSource>().clip = musicBank.GetComponent<musicBank>().soundSent;
         }
         else if (noteNum == 2)
         {
             Instantiate(Note2, firePoint.position, firePoint.rotation);
+            Note2.GetComponent<AudioSource>().clip = musicBank.GetComponent<musicBank>().soundSent;
         }
         else if (noteNum == 3)
         {
             Instantiate(Note3, firePoint.position, firePoint.rotation);
+            Note3.GetComponent<AudioSource>().clip = musicBank.GetComponent<musicBank>().soundSent;
         }
         else if (noteNum == 4)
         {
             Instantiate(Note4, firePoint.position, firePoint.rotation);
+            Note4.GetComponent<AudioSource>().clip = musicBank.GetComponent<musicBank>().soundSent;
         }
     }
 }
