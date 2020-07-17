@@ -12,13 +12,13 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rb.velocity = transform.right * speed;
-        Invoke("destruction", 0.75f);
+        Invoke("destruction",2f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag != "Player")
-           Destroy(gameObject);
+            destruction();
     }
 
     private void destruction()

@@ -67,6 +67,12 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if (Input.GetButtonDown("Fire1"))
+        {
+
+            animator.SetTrigger("isAttacking");
+        }
+
         //Change Instruments
         if (Input.GetButtonDown("Fire2"))
         {
@@ -86,8 +92,6 @@ public class PlayerController : MonoBehaviour
     public void onLanding()
     {
         animator.SetBool("isJumping", false);
-        animator.SetBool("isDoubleJumping", false);
-        doubleJump = false;
     }
 
     private void FixedUpdate()
