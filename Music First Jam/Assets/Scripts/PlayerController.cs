@@ -22,6 +22,10 @@ public class PlayerController : MonoBehaviour
     bool inDoor = false;
     int sceneChange = 0;
 
+    //Animation variables
+    public Animator animator;
+    bool doubleJump = false;
+
     public void Awake()
     {
         buttonInteract.SetActive(false);
@@ -41,10 +45,26 @@ public class PlayerController : MonoBehaviour
     {
         horizontalMovement = Input.GetAxisRaw("Horizontal") * moveSpeed;
 
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMovement));
+
+        //vertVelocity
+        if (GetComponent<Rigidbody2D>().velocity.y >= 0)
+        {
+            animator.SetBool("vertMovement", true);
+        }
+        else
+        {
+            animator.SetBool("vertMovement", false);
+        }
+
         //Jump
         if (Input.GetButtonDown("Jump"))
         {
-            jump = true;
+            if (doubleJump == false)
+            {
+                jump = true;
+                animator.SetBool("isJumping", true);
+            }
         }
 
         //Change Instruments
@@ -61,6 +81,13 @@ public class PlayerController : MonoBehaviour
                 SceneManager.LoadScene(sceneChange);
             }
         }
+    }
+
+    public void onLanding()
+    {
+        animator.SetBool("isJumping", false);
+        animator.SetBool("isDoubleJumping", false);
+        doubleJump = false;
     }
 
     private void FixedUpdate()

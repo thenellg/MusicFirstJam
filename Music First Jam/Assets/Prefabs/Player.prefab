@@ -327,6 +327,7 @@ MonoBehaviour:
   controller: {fileID: 1756572202007075059}
   moveSpeed: 40
   buttonInteract: {fileID: 1756572202021969391}
+  animator: {fileID: 1756572202007074959}
 --- !u!114 &1756572202007074953
 MonoBehaviour:
   m_ObjectHideFlags: 0

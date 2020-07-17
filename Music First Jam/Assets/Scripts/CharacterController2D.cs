@@ -67,7 +67,7 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
-				if (!wasGrounded)
+				if (!wasGrounded && m_Rigidbody2D.velocity.y < 0)
 					OnLandEvent.Invoke();
 				numJumps = 0;
 				coyoteTimer = 3;
