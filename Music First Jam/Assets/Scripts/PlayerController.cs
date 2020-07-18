@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Cinemachine;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -25,6 +26,10 @@ public class PlayerController : MonoBehaviour
     //Animation variables
     public Animator animator;
     bool doubleJump = false;
+
+    //Camera variables
+    public CinemachineTransposer cameraController;
+
 
     public void Awake()
     {
