@@ -415,6 +415,10 @@ MonoBehaviour:
   moveSpeed: 40
   buttonInteract: {fileID: 1756572202021969391}
   animator: {fileID: 1756572202007074959}
+  playerHealth: 3
+  healthUI: {fileID: 0}
+  damage: {r: 0.20784314, g: 0.20784314, b: 0.20784314, a: 255}
+  normal: {r: 255, g: 255, b: 255, a: 255}
 --- !u!114 &1756572202007074953
 MonoBehaviour:
   m_ObjectHideFlags: 0
