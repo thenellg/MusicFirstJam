@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using Cinemachine;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,6 +28,19 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     bool doubleJump = false;
 
+    //Health variables
+    public int playerHealth = 3;
+    bool invincible = false;
+    public TextMeshProUGUI healthUI;
+    public Color damage = new Color(121, 121, 121, 255);
+    public Color normal = new Color(255, 255, 255, 255);
+
+    //Knockback
+    public float knockback;
+    public float knockbackLength;
+    public float knockbackCount;
+    public bool knockFromRight;
+
     public void Awake()
     {
         buttonInteract.SetActive(false);
@@ -43,7 +58,18 @@ public class PlayerController : MonoBehaviour
 
     public void Update()
     {
-        horizontalMovement = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        if (knockbackCount <= 0) {
+            horizontalMovement = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        }
+        else
+        {
+            if (knockFromRight)
+                GetComponent<Rigidbody2D>().velocity = new Vector2(-20, knockback);
+            else
+                GetComponent<Rigidbody2D>().velocity = new Vector2(20, knockback);
+
+            knockbackCount -= Time.deltaTime;
+        }
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMovement));
 
@@ -87,6 +113,18 @@ public class PlayerController : MonoBehaviour
                 SceneManager.LoadScene(sceneChange);
             }
         }
+
+        healthUI.text = playerHealth.ToString();
+
+        if (invincible)
+        {
+            this.GetComponent<SpriteRenderer>().color = damage;
+        }
+        else
+        {
+            this.GetComponent<SpriteRenderer>().color = normal;
+        }
+
     }
 
     public void onLanding()
@@ -113,6 +151,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void GameOver()
+    {
+
+    }
+
+    void invincibleOff()
+    {
+        invincible = false;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Door")
@@ -121,12 +169,44 @@ public class PlayerController : MonoBehaviour
             sceneChange = collision.gameObject.GetComponent<Door>().sceneNumber;
             inDoor = true;
         }
+
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if ((collision.gameObject.tag == "EnemyAttack" && invincible == false) || (collision.gameObject.tag == "Enemy" && invincible == false))
+        {
+            //Do damage, set buffer and set off animation
+            playerHealth--;
+            invincible = true;
+            Invoke("invincibleOff", 1f);
+            animator.SetTrigger("isHurt");
+
+            //Knockback
+
+            knockbackCount = knockbackLength;
+            if (collision.transform.position.x > transform.position.x)
+            {
+                knockFromRight = true;
+            }
+            else
+            {
+                knockFromRight = false;
+            }
+
+            if (playerHealth <= 0)
+            {
+                GameOver();
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Door")
         {
+
             buttonInteract.SetActive(false);
             inDoor = false;
         }
