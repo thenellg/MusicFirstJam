@@ -17,5 +17,10 @@ public class Hole : MonoBehaviour
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        if (collision.tag == "Enemy")
+        {
+            collision.GetComponent<EnemyDamage>().Die();
+        }
     }
 }

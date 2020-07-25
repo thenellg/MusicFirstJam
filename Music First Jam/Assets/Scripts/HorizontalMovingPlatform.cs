@@ -7,7 +7,7 @@ public class HorizontalMovingPlatform : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag != "Untagged")
         {
             collision.transform.parent = transform;
         }
@@ -16,7 +16,7 @@ public class HorizontalMovingPlatform : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag != "Untagged")
         {
             collision.transform.parent = transform;
         }
@@ -24,7 +24,7 @@ public class HorizontalMovingPlatform : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag != "Untagged")
         {
             collision.transform.parent = null;
         }
@@ -32,7 +32,7 @@ public class HorizontalMovingPlatform : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag != "Untagged")
         {
             collision.transform.parent = null;
         }

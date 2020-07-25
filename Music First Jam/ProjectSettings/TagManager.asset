@@ -8,6 +8,7 @@ TagManager:
   - Attack
   - Enemy
   - Breakable
+  - Arena
   layers:
   - Default
   - TransparentFX
