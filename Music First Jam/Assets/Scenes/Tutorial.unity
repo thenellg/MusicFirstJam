@@ -6472,6 +6472,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!61 &1596595481 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 3097982647029915606, guid: b767a08b64f3d6d469ff3ab7d764a7c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3097982646834260879}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1597797805
 GameObject:
   m_ObjectHideFlags: 0
@@ -46555,6 +46561,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3097982647029915606, guid: b767a08b64f3d6d469ff3ab7d764a7c3,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3097982648065509226, guid: b767a08b64f3d6d469ff3ab7d764a7c3,
+        type: 3}
+      propertyPath: hurtBox
+      value: 
+      objectReference: {fileID: 1596595481}
     - target: {fileID: 3097982648065509227, guid: b767a08b64f3d6d469ff3ab7d764a7c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46563,7 +46579,7 @@ PrefabInstance:
     - target: {fileID: 3097982648065509227, guid: b767a08b64f3d6d469ff3ab7d764a7c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.74
+      value: 4.34
       objectReference: {fileID: 0}
     - target: {fileID: 3097982648065509227, guid: b767a08b64f3d6d469ff3ab7d764a7c3,
         type: 3}
