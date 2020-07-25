@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public GameObject buttonInteract;
     bool inDoor = false;
     int sceneChange = 0;
+    GameObject door;
 
     //Animation variables
     public Animator animator;
@@ -44,6 +45,7 @@ public class PlayerController : MonoBehaviour
     public void Awake()
     {
         buttonInteract.SetActive(false);
+        playerHealth = PlayerPrefs.GetInt("Health", 3);
         /*
         //Trying the new input system. Doesn't work for continuous movement yet so I'm
         //scrapping the idea
@@ -110,7 +112,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetButtonDown("Fire3"))
             {
                 //get scene number from door script and change to scene
-                SceneManager.LoadScene(sceneChange);
+                door.gameObject.GetComponent<Door>().changeScene();
             }
         }
 
@@ -165,6 +167,8 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Door")
         {
+
+            door = collision.gameObject;
             buttonInteract.SetActive(true);
             sceneChange = collision.gameObject.GetComponent<Door>().sceneNumber;
             inDoor = true;

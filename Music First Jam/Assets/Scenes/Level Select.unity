@@ -848,6 +848,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door - Graveyard
       objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1478781230}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: healthReset
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3a831690740b1f4e83e54b78be8b686, type: 3}
 --- !u!4 &333863551 stripped
@@ -922,6 +932,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Door - Dining/Kitchen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: sceneNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1478781230}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: healthReset
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3a831690740b1f4e83e54b78be8b686, type: 3}
@@ -2835,6 +2860,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Door - Arcade
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1478781230}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: healthReset
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3a831690740b1f4e83e54b78be8b686, type: 3}
@@ -12714,6 +12749,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door - Library
       objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1478781230}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: healthReset
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3a831690740b1f4e83e54b78be8b686, type: 3}
 --- !u!4 &1778347917 stripped
@@ -12788,6 +12833,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Door - Attic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1478781230}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: healthReset
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3a831690740b1f4e83e54b78be8b686, type: 3}
