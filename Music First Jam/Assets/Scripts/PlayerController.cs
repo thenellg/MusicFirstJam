@@ -178,13 +178,29 @@ public class PlayerController : MonoBehaviour
         if ((collision.gameObject.tag == "EnemyAttack" && invincible == false) || (collision.gameObject.tag == "Enemy" && invincible == false))
         {
             //Do damage, set buffer and set off animation
-            playerHealth--;
+            Player_Take_Damage(1,collision);
+            //Knockback   
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Door")
+        {
+            buttonInteract.SetActive(false);
+            inDoor = false;
+        }
+    }
+
+    //Enemies should be able to call this function to deal damage to our boy
+    public void Player_Take_Damage(int n, Collision2D collision){
+                    //Do damage, set buffer and set off animation
+            playerHealth -= n;
             invincible = true;
             Invoke("invincibleOff", 1f);
             animator.SetTrigger("isHurt");
 
             //Knockback
-
             knockbackCount = knockbackLength;
             if (collision.transform.position.x > transform.position.x)
             {
@@ -199,19 +215,8 @@ public class PlayerController : MonoBehaviour
             {
                 GameOver();
             }
-        }
+
     }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Door")
-        {
-
-            buttonInteract.SetActive(false);
-            inDoor = false;
-        }
-    }
-
     /*
     void OnEnable()
     {

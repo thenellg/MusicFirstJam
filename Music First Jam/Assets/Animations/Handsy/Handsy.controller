@@ -85,7 +85,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: activate
+    m_ConditionEvent: is_vibing
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5570952847855568625}
@@ -109,8 +109,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: deactivate
+  - m_ConditionMode: 2
+    m_ConditionEvent: is_vibing
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -9191389421093582723}
@@ -135,14 +135,8 @@ AnimatorController:
   m_Name: Handsy
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: activate
-    m_Type: 9
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
-  - m_Name: deactivate
-    m_Type: 9
+  - m_Name: is_vibing
+    m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0

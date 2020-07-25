@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Breakable
   - EnemyAttack
+  - ai_sensor
   layers:
   - Default
   - TransparentFX
