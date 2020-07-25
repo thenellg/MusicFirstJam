@@ -52,7 +52,13 @@ public class FightArena : MonoBehaviour
 
     void destroySpawners()
     {
-
+        if (spawners.Length > 0)
+        {
+            foreach (GameObject bye in spawners)
+            {
+                Destroy(bye);
+            }
+        }
     }
 
 }
