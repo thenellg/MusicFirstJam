@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Breakable
   - EnemyAttack
+  - Arena
   layers:
   - Default
   - TransparentFX

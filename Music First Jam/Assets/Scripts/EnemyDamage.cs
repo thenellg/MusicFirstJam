@@ -8,6 +8,9 @@ public class EnemyDamage : MonoBehaviour
     public int health = 100;
     public GameObject spoils;
     public int damageToPlayer = 0;
+    public bool inArena = false;
+    GameObject arena;
+
 
     public void Start()
     {
@@ -25,11 +28,16 @@ public class EnemyDamage : MonoBehaviour
         Debug.Log(health);
     }
 
-    void Die()
+    public void Die()
     {
         //Add in a death animation?
         //Instantiate(spoils, transform.position, Quaternion.identity);
+
+        if (inArena)
+            arena.GetComponent<FightArena>().enemiesKilled++;
+
         Destroy(gameObject);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -37,6 +45,10 @@ public class EnemyDamage : MonoBehaviour
         if (collision.gameObject.tag == "Attack")
         {
             TakeDamage(collision.gameObject.GetComponent<Bullet>().damage);
+        }
+        if (collision.gameObject.tag == "Arena")
+        {
+            arena = collision.gameObject;
         }
     }
 }
