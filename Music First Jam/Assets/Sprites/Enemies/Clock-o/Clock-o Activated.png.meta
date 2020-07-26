@@ -1,7 +1,46 @@
 fileFormatVersion: 2
 guid: 2fb2d5d83ae330046b873759f38bc6e4
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3143824398351879174
+    second: Clock-o Activated_0
+  - first:
+      213: 239720124515193431
+    second: Clock-o Activated_1
+  - first:
+      213: 4309998635737085794
+    second: Clock-o Activated_2
+  - first:
+      213: -3483818376308440834
+    second: Clock-o Activated_3
+  - first:
+      213: -3939863851470730015
+    second: Clock-o Activated_4
+  - first:
+      213: 3612903213075842810
+    second: Clock-o Activated_5
+  - first:
+      213: 8059966916800464156
+    second: Clock-o Activated_6
+  - first:
+      213: -4339726658578385459
+    second: Clock-o Activated_7
+  - first:
+      213: 1870670406484071832
+    second: Clock-o Activated_0
+  - first:
+      213: -1494801971517276223
+    second: Clock-o Activated_1
+  - first:
+      213: 8935080602498380054
+    second: Clock-o Activated_2
+  - first:
+      213: -5713812317253942097
+    second: Clock-o Activated_3
+  - first:
+      213: -6224600393130173479
+    second: Clock-o Activated_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +79,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +110,126 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Clock-o Activated_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 60
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895915ec2d4f5f910800000000000000
+      internalID: 1870670406484071832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock-o Activated_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 59
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfb826d685614be0800000000000000
+      internalID: -1494801971517276223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock-o Activated_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 61
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6113667c778cffb70800000000000000
+      internalID: 8935080602498380054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock-o Activated_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 59
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4c3d478f574b0b0800000000000000
+      internalID: -5713812317253942097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock-o Activated_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db18bafbe6cd99a0800000000000000
+      internalID: -6224600393130173479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

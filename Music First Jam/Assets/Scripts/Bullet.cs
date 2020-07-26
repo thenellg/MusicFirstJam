@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour
     public int damage;
     public float speed = 20f;
     public Rigidbody2D rb;
+    [SerializeField] private List<string> tagExclusionList;
 
     void Start()
     {
@@ -17,8 +18,9 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag != "Player")
+        if (!tagExclusionList.Contains(collision.tag)){
             destruction();
+        }
     }
 
     private void destruction()

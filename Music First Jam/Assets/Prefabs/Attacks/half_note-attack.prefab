@@ -139,6 +139,10 @@ MonoBehaviour:
   damage: 50
   speed: 15
   rb: {fileID: 379676230889267256}
+  tagExclusionList:
+  - Player
+  - ai_sensor
+  - HurtBox
 --- !u!82 &7167893735475174557
 AudioSource:
   m_ObjectHideFlags: 0
@@ -149,7 +153,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: aae175ded14b3c34bb87e870474f4476, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 52ecda4683159124685574670acec8d1, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.6
   m_Pitch: 1

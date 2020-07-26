@@ -10,6 +10,7 @@ TagManager:
   - Breakable
   - EnemyAttack
   - ai_sensor
+  - HurtBox
   layers:
   - Default
   - TransparentFX
@@ -19,10 +20,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Terrain
+  - Enemy
+  - Player
+  - AI Component
   - 
   - 
   - 

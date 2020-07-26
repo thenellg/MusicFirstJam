@@ -278,6 +278,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15010645}
   m_CullTransparentMesh: 0
+--- !u!1 &37488162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3097982648065509230, guid: b767a08b64f3d6d469ff3ab7d764a7c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3097982646834260879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &37488163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 37488162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75dde66da0442ed4b8552a4be31e2ac2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hurtBox: {fileID: 0}
 --- !u!1 &63720380
 GameObject:
   m_ObjectHideFlags: 0
@@ -1242,7 +1261,7 @@ GameObject:
   - component: {fileID: 416884490}
   - component: {fileID: 416884489}
   - component: {fileID: 416884488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Invisible Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2439,7 +2458,7 @@ GameObject:
   - component: {fileID: 663229782}
   - component: {fileID: 663229781}
   - component: {fileID: 663229780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group2 - Half
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2809,6 +2828,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &686027273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3097982647557316380, guid: b767a08b64f3d6d469ff3ab7d764a7c3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3097982646834260879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &686027275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686027273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24118e0f88c057648bc108304c4c84b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visionTags: []
 --- !u!1 &691395401
 GameObject:
   m_ObjectHideFlags: 0
@@ -4479,7 +4517,7 @@ GameObject:
   - component: {fileID: 1141762607}
   - component: {fileID: 1141762606}
   - component: {fileID: 1141762605}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group4 - Whole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5544,7 +5582,7 @@ GameObject:
   - component: {fileID: 1407096809}
   - component: {fileID: 1407096811}
   - component: {fileID: 1407096810}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: 8th Note Flair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6323,7 +6361,7 @@ GameObject:
   - component: {fileID: 1587667978}
   - component: {fileID: 1587667980}
   - component: {fileID: 1587667979}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Half Note Flair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6472,12 +6510,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!61 &1596595481 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 3097982647029915606, guid: b767a08b64f3d6d469ff3ab7d764a7c3,
-    type: 3}
-  m_PrefabInstance: {fileID: 3097982646834260879}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1597797805
 GameObject:
   m_ObjectHideFlags: 0
@@ -7109,7 +7141,7 @@ GameObject:
   - component: {fileID: 1664239443}
   - component: {fileID: 1664239442}
   - component: {fileID: 1664239441}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group2 - Quarter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7695,7 +7727,7 @@ GameObject:
   - component: {fileID: 1901973335}
   - component: {fileID: 1901973337}
   - component: {fileID: 1901973336}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Whole Note Flair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8074,6 +8106,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1756572200261541510, guid: 062195e069a5b504fac1939925008cf8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756572201160359687, guid: 062195e069a5b504fac1939925008cf8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756572201262047138, guid: 062195e069a5b504fac1939925008cf8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1756572201262047139, guid: 062195e069a5b504fac1939925008cf8,
         type: 3}
       propertyPath: group1
@@ -8099,6 +8146,11 @@ PrefabInstance:
       propertyPath: currentInstrument
       value: 
       objectReference: {fileID: 1597797806}
+    - target: {fileID: 1756572201511688147, guid: 062195e069a5b504fac1939925008cf8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1756572202007074952, guid: 062195e069a5b504fac1939925008cf8,
         type: 3}
       propertyPath: healthUI
@@ -8283,6 +8335,21 @@ PrefabInstance:
         type: 3}
       propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756572202007075059, guid: 062195e069a5b504fac1939925008cf8,
+        type: 3}
+      propertyPath: m_WhatIsGround.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756572202021969391, guid: 062195e069a5b504fac1939925008cf8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756572202084546585, guid: 062195e069a5b504fac1939925008cf8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 062195e069a5b504fac1939925008cf8, type: 3}
@@ -8560,7 +8627,7 @@ GameObject:
   - component: {fileID: 1994983614}
   - component: {fileID: 1994983613}
   - component: {fileID: 1994983612}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Group1  - 8th
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9117,7 +9184,7 @@ GameObject:
   - component: {fileID: 2011728187}
   - component: {fileID: 2011728186}
   - component: {fileID: 2011728185}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45927,7 +45994,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2059105412}
   - component: {fileID: 2059105413}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45977,7 +46044,7 @@ GameObject:
   - component: {fileID: 2060992330}
   - component: {fileID: 2060992332}
   - component: {fileID: 2060992331}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Quarter Note Flair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46566,11 +46633,6 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3097982648065509226, guid: b767a08b64f3d6d469ff3ab7d764a7c3,
-        type: 3}
-      propertyPath: hurtBox
-      value: 
-      objectReference: {fileID: 1596595481}
     - target: {fileID: 3097982648065509227, guid: b767a08b64f3d6d469ff3ab7d764a7c3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46631,7 +46693,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handsy
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3097982647557316378, guid: b767a08b64f3d6d469ff3ab7d764a7c3, type: 3}
+    - {fileID: 3097982648065509226, guid: b767a08b64f3d6d469ff3ab7d764a7c3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b767a08b64f3d6d469ff3ab7d764a7c3, type: 3}
 --- !u!1001 &4811944364353886868
 PrefabInstance:
@@ -46796,3 +46860,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a08129581b989de4187babd7c6439f29, type: 3}
+--- !u!1001 &8157373210044261356
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8157373210716270153, guid: 097ab0b65cd78ce4c935d2c25ac66af9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157373210716270153, guid: 097ab0b65cd78ce4c935d2c25ac66af9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157373210716270153, guid: 097ab0b65cd78ce4c935d2c25ac66af9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157373210716270153, guid: 097ab0b65cd78ce4c935d2c25ac66af9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157373210716270153, guid: 097ab0b65cd78ce4c935d2c25ac66af9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157373210716270153, guid: 097ab0b65cd78ce4c935d2c25ac66af9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157373210716270153, guid: 097ab0b65cd78ce4c935d2c25ac66af9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157373210716270153, guid: 097ab0b65cd78ce4c935d2c25ac66af9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157373210716270153, guid: 097ab0b65cd78ce4c935d2c25ac66af9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157373210716270153, guid: 097ab0b65cd78ce4c935d2c25ac66af9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157373210716270153, guid: 097ab0b65cd78ce4c935d2c25ac66af9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157373210716270158, guid: 097ab0b65cd78ce4c935d2c25ac66af9,
+        type: 3}
+      propertyPath: m_Name
+      value: Clocko
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 097ab0b65cd78ce4c935d2c25ac66af9, type: 3}
