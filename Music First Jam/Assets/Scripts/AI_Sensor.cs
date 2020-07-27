@@ -31,8 +31,9 @@ public class AI_Sensor : MonoBehaviour
         if(player_within_vision){
            agent_sees_player = Is_Player_In_Sight();
         }
-        if(agent_cares_about_ledges)
+        if(agent_cares_about_ledges){
             agent_on_ledge = Is_On_Ledge(Agent_Facing_Right());
+        }
         
     }
 
@@ -64,10 +65,13 @@ public class AI_Sensor : MonoBehaviour
 
     //casts a ray from 0,0 at a 45 degree angle, at the appropriate height, asking if there is terrain in front of it, walls need to be marked in this case
     public bool Is_On_Ledge(bool right){
+        if(!agent_cares_about_ledges)
+            return false;
+
         int masks = LayerMask.GetMask("Terrain","Wall"); //we only want to scan for these masks
         
         ground_check_angle = -25;
-        if(!right){
+        if(right){
             ground_check_angle = 205;
         }
         float a = Mathf.Deg2Rad*(ground_check_angle); 
@@ -92,7 +96,11 @@ public class AI_Sensor : MonoBehaviour
         return true; //nothing means we're on a ledge
         
     }
+    //This function name is real shitty
 
+    public Vector3 Get_Player_Position(){
+        return player.transform.position;
+    }
     public bool Get_Vision(){
         return agent_sees_player;
     }

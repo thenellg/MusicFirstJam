@@ -33,8 +33,8 @@ public class enemy_behavior : MonoBehaviour
 
     //basic inherited intitialization that all enemies will use
     protected void Base_Initialize(){
-        moving_right = true;
-        facing_right = true;
+        moving_right = false;
+        facing_right = false;
         invincible = false;
         m_Animator = gameObject.GetComponent<Animator>();
         
@@ -126,13 +126,13 @@ public class enemy_behavior : MonoBehaviour
         rb.velocity = Vector3.SmoothDamp(rb.velocity, targetVelocity, ref m_Velocity, 0.5f);
 
         // If the input is moving the player right and the player is facing left...
-        if (move > 0 && !ai_sensor.Agent_Facing_Right())
+        if (move < 0 && !ai_sensor.Agent_Facing_Right())
         {
             // ... flip the player.
             Flip_Sprite();
         }
         // Otherwise if the input is moving the player left and the player is facing right...
-        else if (move < 0 && ai_sensor.Agent_Facing_Right())
+        else if (move > 0 && ai_sensor.Agent_Facing_Right())
         {
             // ... flip the player.
             Flip_Sprite();
