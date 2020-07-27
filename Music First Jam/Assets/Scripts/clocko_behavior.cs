@@ -65,14 +65,12 @@ public class clocko_behavior : MonoBehaviour
     }
 
     private void Activate(){
-        Debug.Log("Help");
         m_Animator.SetBool("Activated",true);
         hurtBox.enabled = true; //turn on the hurt
         is_activated = true;
     }
 
     private void Deactivate(){
-        Debug.Log("Help2");
         m_Animator.SetBool("Activated",false);
         hurtBox.enabled = false; //turn off the hurt
         is_activated = false;
