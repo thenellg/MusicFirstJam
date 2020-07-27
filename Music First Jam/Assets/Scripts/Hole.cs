@@ -11,7 +11,16 @@ public class Hole : MonoBehaviour
         {
             //Add in a fade to black here and a small hold
 
+            collision.gameObject.GetComponent<PlayerController>().playerHealth--;
+
+            PlayerPrefs.SetInt("Health", collision.gameObject.GetComponent<PlayerController>().playerHealth);
+
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        if (collision.tag == "Enemy")
+        {
+            collision.GetComponent<EnemyDamage>().Die();
         }
     }
 }

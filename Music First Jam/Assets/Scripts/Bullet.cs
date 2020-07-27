@@ -18,7 +18,9 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!tagExclusionList.Contains(collision.tag)){
+        
+        if (collision.tag != "Player" && collision.tag != "Arena")
+            if (!tagExclusionList.Contains(collision.tag)){
             destruction();
         }
     }
