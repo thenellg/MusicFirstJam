@@ -127,6 +127,10 @@ public class PlayerController : MonoBehaviour
             this.GetComponent<SpriteRenderer>().color = normal;
         }
 
+        if (playerHealth <= 0)
+        {
+            GameOver();
+        }
     }
 
     public void onLanding()
@@ -155,7 +159,10 @@ public class PlayerController : MonoBehaviour
 
     void GameOver()
     {
+        //Whatever fancy game over stuff
 
+        PlayerPrefs.SetInt("Health", 3);
+        SceneManager.LoadScene(1);
     }
 
     void invincibleOff()
