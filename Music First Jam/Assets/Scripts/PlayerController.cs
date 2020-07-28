@@ -180,7 +180,9 @@ public class PlayerController : MonoBehaviour
             sceneChange = collision.gameObject.GetComponent<Door>().sceneNumber;
             inDoor = true;
         }
-
+        if((collision.gameObject.tag == "EnemyAttack" && invincible == false) || (collision.gameObject.tag == "Enemy" && invincible == false)){
+            Player_Take_Damage(1,collision.transform);
+        }
 
     }
 
@@ -189,15 +191,32 @@ public class PlayerController : MonoBehaviour
         if ((collision.gameObject.tag == "EnemyAttack" && invincible == false) || (collision.gameObject.tag == "Enemy" && invincible == false))
         {
             //Do damage, set buffer and set off animation
-            playerHealth--;
+            Player_Take_Damage(1,collision.transform);
+            //Knockback   
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Door")
+        {
+            buttonInteract.SetActive(false);
+            inDoor = false;
+        }
+        
+    }
+
+    //Enemies should be able to call this function to deal damage to our boy
+    public void Player_Take_Damage(int n, Transform collision){
+                    //Do damage, set buffer and set off animation
+            playerHealth -= n;
             invincible = true;
             Invoke("invincibleOff", 1f);
             animator.SetTrigger("isHurt");
 
             //Knockback
-
             knockbackCount = knockbackLength;
-            if (collision.transform.position.x > transform.position.x)
+            if (collision.position.x > transform.position.x)
             {
                 knockFromRight = true;
             }
@@ -210,19 +229,9 @@ public class PlayerController : MonoBehaviour
             {
                 GameOver();
             }
-        }
+
     }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Door")
-        {
-
-            buttonInteract.SetActive(false);
-            inDoor = false;
-        }
-    }
-
+    
     /*
     void OnEnable()
     {

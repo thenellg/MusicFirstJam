@@ -139,6 +139,10 @@ MonoBehaviour:
   damage: 50
   speed: 15
   rb: {fileID: 3077913481585910413}
+  tagExclusionList:
+  - Player
+  - ai_sensor
+  - HurtBox
 --- !u!95 &8792591256656633210
 Animator:
   serializedVersion: 3

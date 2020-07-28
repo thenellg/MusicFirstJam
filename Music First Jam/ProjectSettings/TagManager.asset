@@ -8,7 +8,11 @@ TagManager:
   - Attack
   - Enemy
   - Breakable
+  - EnemyAttack
   - Arena
+  - ai_sensor
+  - HurtBox
+  - Terrain
   layers:
   - Default
   - TransparentFX
@@ -19,10 +23,10 @@ TagManager:
   - 
   - 
   - Arena
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Player
+  - Terrain
+  - Wall
   - 
   - 
   - 

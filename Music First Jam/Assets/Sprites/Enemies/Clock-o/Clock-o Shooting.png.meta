@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: ea7649aed4370d34f90ff8f4aa4044c3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7830986181056713407
+    second: Clock-o Shooting_0
+  - first:
+      213: -8850354886486565237
+    second: Clock-o Shooting_1
+  - first:
+      213: 4042017396985514238
+    second: Clock-o Shooting_2
+  - first:
+      213: 4930831688129279421
+    second: Clock-o Shooting_3
+  - first:
+      213: 3475690994705682462
+    second: Clock-o Shooting_4
+  - first:
+      213: 9113225721034789987
+    second: Clock-o Shooting_5
+  - first:
+      213: 4525694209471251946
+    second: Clock-o Shooting_6
+  - first:
+      213: 2189954201245154468
+    second: Clock-o Shooting_7
+  - first:
+      213: 6615822686890415943
+    second: Clock-o Shooting_0
+  - first:
+      213: 5388891700824850124
+    second: Clock-o Shooting_1
+  - first:
+      213: 7394641209370375293
+    second: Clock-o Shooting_2
+  - first:
+      213: 7045309687718131162
+    second: Clock-o Shooting_3
+  - first:
+      213: -7881777837473185175
+    second: Clock-o Shooting_4
+  - first:
+      213: 3703714821650095867
+    second: Clock-o Shooting_5
+  - first:
+      213: -7911858823993380053
+    second: Clock-o Shooting_6
+  - first:
+      213: 6955484164157534612
+    second: Clock-o Shooting_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +88,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +119,126 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Clock-o Shooting_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 58
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747d21d7eaf10db50800000000000000
+      internalID: 6615822686890415943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock-o Shooting_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 58
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce37b8437039ca40800000000000000
+      internalID: 5388891700824850124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock-o Shooting_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 58
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d747cfd500b0f9660800000000000000
+      internalID: 7394641209370375293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock-o Shooting_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 62
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5be0555d7f5c160800000000000000
+      internalID: 7045309687718131162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock-o Shooting_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 0
+        width: 60
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9624dd6f0dc4e9290800000000000000
+      internalID: -7881777837473185175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
