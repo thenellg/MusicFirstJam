@@ -20,7 +20,7 @@ public class Hole : MonoBehaviour
 
         if (collision.tag == "Enemy")
         {
-            collision.GetComponent<EnemyDamage>().Die();
+            collision.GetComponent<enemy_behavior>().Die();
         }
     }
 }

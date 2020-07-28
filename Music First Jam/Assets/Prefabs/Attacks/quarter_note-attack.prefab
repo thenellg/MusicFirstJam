@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  speed: 15
+  speed: 20
   rb: {fileID: 7194278949275103527}
   tagExclusionList:
   - ai_sensor
