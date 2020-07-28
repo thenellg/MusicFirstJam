@@ -20,7 +20,7 @@ public class AI_Sensor : MonoBehaviour
     {
         agent_sees_player = false;
         agent_on_ledge = false;
-        player = GameObject.FindGameObjectWithTag("Player"); //get a reference to the player so we can track him
+        player = GameObject.Find("Player"); //get a reference to the player so we can track him
         //get our collider
         if(!(agent_vision_collider = GetComponent<CircleCollider2D>())){
             agent_vision_collider = GetComponent<BoxCollider2D>();
@@ -54,8 +54,8 @@ public class AI_Sensor : MonoBehaviour
         Vector3 dir =  player.transform.position-transform.position;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir,Mathf.Infinity,masks);
         Debug.DrawRay(transform.position,dir,Color.red);
-        //Debug.Log(hit.collider.tag);
-        if (hit.collider.tag== "Player"){
+        Debug.Log(transform.parent.name + " sees " + hit.collider.tag);
+        if (hit.collider.tag == "Player"){
             return true;
         }
         else{

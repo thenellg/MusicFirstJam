@@ -163,6 +163,7 @@ MonoBehaviour:
   - Enemy
   - ai_sensor
   - HurtBox
+  - Untagged
 --- !u!82 &1248768261610793966
 AudioSource:
   m_ObjectHideFlags: 0
