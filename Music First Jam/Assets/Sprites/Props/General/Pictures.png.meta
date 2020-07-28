@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: 5eccec558560d2c4a83c0d94e68f3266
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7450005014475753423
+    second: Pictures_0
+  - first:
+      213: -6745060574662119795
+    second: Pictures_1
+  - first:
+      213: 3544525483379162651
+    second: Pictures_2
+  - first:
+      213: 473811921676569841
+    second: Pictures_3
+  - first:
+      213: 6217494100297327672
+    second: Pictures_4
+  - first:
+      213: 2789528294375578895
+    second: Pictures_5
+  - first:
+      213: -6036445386470635399
+    second: Pictures_6
+  - first:
+      213: -2504490689227176502
+    second: Pictures_7
+  - first:
+      213: 7339016830805631675
+    second: Pictures_8
+  - first:
+      213: 722149192395558525
+    second: Pictures_9
+  - first:
+      213: -3410607695888690219
+    second: Pictures_10
+  - first:
+      213: 4410478539457575133
+    second: Pictures_11
+  - first:
+      213: -8733513462767312046
+    second: Pictures_12
+  - first:
+      213: 8930284703287042162
+    second: Pictures_13
+  - first:
+      213: -5558355927278810828
+    second: Pictures_14
+  - first:
+      213: -7792848552939719111
+    second: Pictures_15
+  - first:
+      213: -3975497866018605911
+    second: Pictures_16
+  - first:
+      213: -7883768192497491513
+    second: Pictures_17
+  - first:
+      213: 5477355416998266456
+    second: Pictures_18
+  - first:
+      213: 175561913091382530
+    second: Pictures_19
+  - first:
+      213: -4062053787377482721
+    second: Pictures_20
+  - first:
+      213: -8772489548660097522
+    second: Pictures_21
+  - first:
+      213: 2091142373307415564
+    second: Pictures_22
+  - first:
+      213: -3697657441123578879
+    second: Pictures_23
+  - first:
+      213: 6066989138783974429
+    second: Pictures_24
+  - first:
+      213: 1796412666834830037
+    second: Pictures_25
+  - first:
+      213: 1497507499931996092
+    second: Pictures_26
+  - first:
+      213: 2584430816171063954
+    second: Pictures_27
+  - first:
+      213: -1558581982510134744
+    second: Pictures_28
+  - first:
+      213: -6784296845679840360
+    second: Pictures_29
+  - first:
+      213: -4826612782763272138
+    second: Pictures_30
+  - first:
+      213: 4505580059101233469
+    second: Pictures_31
+  - first:
+      213: -4333829713871429634
+    second: Pictures_32
+  - first:
+      213: -6335217590121326363
+    second: Pictures_33
+  - first:
+      213: 3147946266712639961
+    second: Pictures_34
+  - first:
+      213: 5795154178423118703
+    second: Pictures_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pictures_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7c4beb61cb36760800000000000000
+      internalID: 7450005014475753423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pictures_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ea5cae42bb462a0800000000000000
+      internalID: -6745060574662119795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pictures_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e722eb52fa03130800000000000000
+      internalID: 3544525483379162651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
