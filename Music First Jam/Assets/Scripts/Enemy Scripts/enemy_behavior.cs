@@ -64,7 +64,9 @@ public class enemy_behavior : MonoBehaviour
         Instantiate(death_rattle,transform.position,transform.rotation);
 
         if (inArena)
+        {
             arena.GetComponent<FightArena>().killedAnEnemy();
+        }
 
         Destroy(this.gameObject);
     }

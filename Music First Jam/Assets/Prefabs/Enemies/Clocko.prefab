@@ -121,11 +121,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hurtBox: {fileID: 0}
   shot_interval: 3
-  health: 150
+  health: 3
   bullet: {fileID: 730311527968039227, guid: 052c893a18550ca428edde4046b345ce, type: 3}
   shot_delay: 0.5
   death_rattle: {fileID: 6438285412870198406, guid: 2828f6be8cce2ec48809f727ed1215f3,
     type: 3}
+  inArena: 1
+  arena: {fileID: 0}
 --- !u!61 &1438145996912567722
 BoxCollider2D:
   m_ObjectHideFlags: 0

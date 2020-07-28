@@ -310,13 +310,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f97fa2afadbdb394b9c8e1e094664a02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 2
   death_rattle: {fileID: 6438285412870198406, guid: 2828f6be8cce2ec48809f727ed1215f3,
     type: 3}
   knockbackCount: 0
   knockbackLength: 0.2
   knockback: 4
   move_speed: 1
+  inArena: 0
+  arena: {fileID: 0}
   rb: {fileID: 0}
   attack_boxes:
   - {fileID: 0}
@@ -324,6 +326,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   attack_range: 2.15
+  inArenaCheck: 1
 --- !u!1 &5212405568139497681
 GameObject:
   m_ObjectHideFlags: 0
