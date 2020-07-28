@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 5212405567495553219}
   - component: {fileID: 5212405567495553218}
   - component: {fileID: 5212405567495553229}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: AI Sensor
   m_TagString: ai_sensor
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 5212405567952569410}
   - component: {fileID: 5212405567952569421}
   - component: {fileID: 5212405567952569420}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Zombaboo
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  attack_range: 1.25
+  attack_range: 2.15
 --- !u!1 &5212405568139497681
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1438145996912567720}
   - component: {fileID: 1438145996912567723}
   - component: {fileID: 1438145996912567722}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Clocko
   m_TagString: Enemy
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4574200128100989100}
   - component: {fileID: 4574200128100989101}
-  m_Layer: 8
+  m_Layer: 12
   m_Name: Wall Marker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 4574200128119915649}
   - component: {fileID: 4574200128119915648}
   - component: {fileID: 4574200128119915711}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Boobleton
   m_TagString: Enemy
   m_Icon: {fileID: 0}
