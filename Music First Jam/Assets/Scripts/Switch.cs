@@ -9,6 +9,12 @@ public class Switch : MonoBehaviour
     public Sprite leverDown;
 
     // Start is called before the first frame update
+    private void Start()
+    {
+        if (showingNewObject)
+            connectedObject.SetActive(false);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Attack")

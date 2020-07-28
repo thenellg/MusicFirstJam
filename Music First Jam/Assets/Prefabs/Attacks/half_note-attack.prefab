@@ -136,7 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 440a9562acc59634283307773c65ee84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 50
+  damage: 1
   speed: 20
   rb: {fileID: 379676230889267256}
   tagExclusionList:
@@ -153,7 +153,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 87d10ac8f6109da4e9eecaf94b8f73cb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7693db19156a7aa4f8cae6f04408d4c5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.6
   m_Pitch: 1

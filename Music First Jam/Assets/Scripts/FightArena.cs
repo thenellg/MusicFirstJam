@@ -29,8 +29,6 @@ public class FightArena : MonoBehaviour
             newObject.SetActive(false);
         }
 
-        //Buggy way of accounting for strangeness
-        enemiesToKill *= 2;
     }
 
     private void Update()

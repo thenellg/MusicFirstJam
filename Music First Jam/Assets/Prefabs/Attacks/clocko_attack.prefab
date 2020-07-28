@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a256f430867ad4eab2890a23f38fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
+  damage: 1
   speed: 20
   rb: {fileID: 5776715359836661174}
   decayRate: 2
@@ -164,6 +164,7 @@ MonoBehaviour:
   - ai_sensor
   - HurtBox
   - Untagged
+  - Arena
 --- !u!82 &1248768261610793966
 AudioSource:
   m_ObjectHideFlags: 0

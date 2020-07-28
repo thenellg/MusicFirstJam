@@ -63,8 +63,8 @@ public class enemy_behavior : MonoBehaviour
     public void Die(){
         Instantiate(death_rattle,transform.position,transform.rotation);
 
-        //if (inArena)
-         //   arena.GetComponent<FightArena>().killedAnEnemy();
+        if (inArena)
+            arena.GetComponent<FightArena>().killedAnEnemy();
 
         Destroy(this.gameObject);
     }
