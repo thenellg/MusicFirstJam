@@ -14,9 +14,17 @@ public class FightArena : MonoBehaviour
 
     bool finished = false;
 
+    public bool showingNewObject = false;
+    public GameObject newObject;
+
     private void Start()
     {
         gates.SetActive(false);
+
+        if (showingNewObject)
+        {
+            newObject.SetActive(false);
+        }
     }
 
     private void Update()
@@ -31,6 +39,11 @@ public class FightArena : MonoBehaviour
 
                 gates.SetActive(false);
                 finished = true;
+
+                if (showingNewObject)
+                {
+                    newObject.SetActive(true);
+                }
             }
     }
 
