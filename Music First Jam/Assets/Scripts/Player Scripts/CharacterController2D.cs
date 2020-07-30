@@ -163,8 +163,6 @@ public class CharacterController2D : MonoBehaviour
 				numJumps++;
 			}
 		}
-        
-
 	}
 
 	public GameObject child;

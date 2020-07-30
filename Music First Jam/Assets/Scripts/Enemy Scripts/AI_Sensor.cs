@@ -54,7 +54,7 @@ public class AI_Sensor : MonoBehaviour
         Vector3 dir =  player.transform.position-transform.position;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir,Mathf.Infinity,masks);
         Debug.DrawRay(transform.position,dir,Color.red);
-        Debug.Log(transform.parent.name + " sees " + hit.collider.tag);
+        //Debug.Log(transform.parent.name + " sees " + hit.collider.tag);
         if (hit.collider.tag == "Player"  && dir.x < 10){
             return true;
         }
@@ -79,21 +79,21 @@ public class AI_Sensor : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, angle*agent_height, agent_height,masks);
         Debug.DrawRay(transform.position,angle*agent_height,Color.blue);
         if(hit){
-            Debug.Log(hit.collider.name);
+            //Debug.Log(hit.collider.name);
             if (hit.collider.tag == "Terrain"){
-                Debug.Log("I see Ground in front of me");
+                //Debug.Log("I see Ground in front of me");
                 return false;
             }
             else if(hit.collider.tag == "Wall"){
-                Debug.Log("I see a wall in front of me");
+                //Debug.Log("I see a wall in front of me");
             }
             else
             {
-                Debug.Log("I dont see Ground in front of me");
+                //Debug.Log("I dont see Ground in front of me");
                 return true;
             }
         }
-        Debug.Log("I dont see Ground in front of me");
+        //Debug.Log("I dont see Ground in front of me");
         return true; //nothing means we're on a ledge
         
     }

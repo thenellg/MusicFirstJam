@@ -150,7 +150,7 @@ public class enemy_behavior : MonoBehaviour
     }
 
     protected void Flip_Sprite(){
-        Debug.Log("Flipping Sprite");
+        //Debug.Log("Flipping Sprite");
         var scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;

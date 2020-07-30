@@ -53,7 +53,7 @@ public class zombaboo_behavior : enemy_behavior
 
     private void Decision_Tree(){
         if(ai_sensor.Get_Vision()){
-            Debug.Log("zombaboo sees player");
+            //Debug.Log("zombaboo sees player");
             //If we see player...
             if(Mathf.Abs(ai_sensor.Get_Player_Position().x-transform.position.x) < attack_range){
                 //if he's in range...
@@ -98,7 +98,7 @@ public class zombaboo_behavior : enemy_behavior
             i.enabled = false;
         }
         //enable one box based off name
-        Debug.Log(name);
+        //Debug.Log(name);
         switch (name)
         {
             case "Zombaboo - attack_0":

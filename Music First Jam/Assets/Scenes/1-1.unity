@@ -3585,7 +3585,7 @@ PrefabInstance:
     - target: {fileID: 2497059504475812946, guid: ac9716a344990d844b4610562d0c3086,
         type: 3}
       propertyPath: m_TagString
-      value: Terrain
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac9716a344990d844b4610562d0c3086, type: 3}
@@ -7352,7 +7352,7 @@ PrefabInstance:
     - target: {fileID: 2497059504475812946, guid: ac9716a344990d844b4610562d0c3086,
         type: 3}
       propertyPath: m_TagString
-      value: Terrain
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac9716a344990d844b4610562d0c3086, type: 3}

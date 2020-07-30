@@ -180,8 +180,9 @@ public class PlayerController : MonoBehaviour
             sceneChange = collision.gameObject.GetComponent<Door>().sceneNumber;
             inDoor = true;
         }
-        if((collision.gameObject.tag == "EnemyAttack" && invincible == false) || (collision.gameObject.tag == "Enemy" && invincible == false)){
+        if((collision.gameObject.tag == "EnemyAttack" && collision.gameObject.layer != 12 && invincible == false) || (collision.gameObject.tag == "Enemy" && collision.gameObject.layer != 12 && invincible == false)){
             Player_Take_Damage(1,collision.transform);
+            Debug.Log(collision.gameObject.layer);
         }
 
     }
@@ -190,6 +191,7 @@ public class PlayerController : MonoBehaviour
     {
         if ((collision.gameObject.tag == "EnemyAttack" && invincible == false) || (collision.gameObject.tag == "Enemy" && invincible == false))
         {
+            Debug.Log(collision.gameObject.layer);
             //Do damage, set buffer and set off animation
             Player_Take_Damage(1,collision.transform);
             //Knockback   
@@ -209,7 +211,7 @@ public class PlayerController : MonoBehaviour
     //Enemies should be able to call this function to deal damage to our boy
     public void Player_Take_Damage(int n, Transform collision){
                     //Do damage, set buffer and set off animation
-            playerHealth -= n;
+            playerHealth -= 1;
             invincible = true;
             Invoke("invincibleOff", 1f);
             animator.SetTrigger("isHurt");
