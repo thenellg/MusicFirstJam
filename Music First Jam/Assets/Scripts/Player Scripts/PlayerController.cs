@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     //Door variables
     public GameObject buttonInteract;
-    bool inDoor = false;
+    [SerializeField] bool inDoor = false;
     int sceneChange = 0;
     GameObject door;
 
@@ -43,10 +43,16 @@ public class PlayerController : MonoBehaviour
     public float knockbackCount;
     public bool knockFromRight;
 
+    //Music variable
+    public AudioSource music;
+
     public void Awake()
     {
         buttonInteract.SetActive(false);
 
+        StartCoroutine(AudioFadeOut.FadeIn(music, 1f));
+
+        inDoor = false;
     }
 
     public void Update()

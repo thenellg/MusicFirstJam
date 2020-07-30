@@ -122,3 +122,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneNumber: 0
+  newScene: Level Select
+  healthReset: 0
+  Player: {fileID: 0}
+  curtain: {fileID: 0}
+  music: {fileID: 0}

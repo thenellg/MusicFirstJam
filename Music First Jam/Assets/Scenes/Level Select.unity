@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 76601720}
   m_Layer: 0
   m_Name: Group2 - Half
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -453,6 +453,131 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1499862235}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &213311058
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 308427855}
+    m_Modifications:
+    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -196.53844
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.616324
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 27.510578
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466914, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: m_Name
+      value: Door - Graveyard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: newScene
+      value: 0-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1478781230}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 1499862238}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: curtain
+      value: 
+      objectReference: {fileID: 1499862237}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: healthReset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: sceneNumber
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b3a831690740b1f4e83e54b78be8b686, type: 3}
+--- !u!4 &213311059 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
+    type: 3}
+  m_PrefabInstance: {fileID: 213311058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &213311060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7459951144265466914, guid: b3a831690740b1f4e83e54b78be8b686,
+    type: 3}
+  m_PrefabInstance: {fileID: 213311058}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &213311061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213311060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e821e6360948bf94bb0ed7590b0cd35c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorNum: 1
+  LevelHubController: {fileID: 13107150}
 --- !u!1 &296874761
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,7 +749,7 @@ GameObject:
   - component: {fileID: 304032889}
   m_Layer: 0
   m_Name: Group4 - Whole
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -817,7 +942,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 333863551}
+  - {fileID: 213311059}
   - {fileID: 443817700}
   - {fileID: 1436242706}
   - {fileID: 1778347917}
@@ -971,121 +1096,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &333863550
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 308427855}
-    m_Modifications:
-    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -195.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 10.651
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 27.510578
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466914, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: m_Name
-      value: Door - Graveyard
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1478781230}
-    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: healthReset
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: sceneNumber
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
-        type: 3}
-      propertyPath: curtain
-      value: 
-      objectReference: {fileID: 1499862237}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b3a831690740b1f4e83e54b78be8b686, type: 3}
---- !u!4 &333863551 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7459951144265466913, guid: b3a831690740b1f4e83e54b78be8b686,
-    type: 3}
-  m_PrefabInstance: {fileID: 333863550}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &362586152 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7459951144265466914, guid: b3a831690740b1f4e83e54b78be8b686,
-    type: 3}
-  m_PrefabInstance: {fileID: 333863550}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &362586153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 362586152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e821e6360948bf94bb0ed7590b0cd35c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorNum: 1
-  LevelHubController: {fileID: 13107150}
 --- !u!1001 &443817699
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1173,6 +1183,21 @@ PrefabInstance:
       propertyPath: curtain
       value: 
       objectReference: {fileID: 1499862237}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: Sound1
+      value: 
+      objectReference: {fileID: 1499862238}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 1499862238}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: newScene
+      value: 1-1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3a831690740b1f4e83e54b78be8b686, type: 3}
 --- !u!4 &443817700 stripped
@@ -1195,7 +1220,7 @@ GameObject:
   - component: {fileID: 480292645}
   m_Layer: 0
   m_Name: Invisible Walls
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2443,7 +2468,7 @@ GameObject:
   - component: {fileID: 1328906822}
   m_Layer: 0
   m_Name: Group1  - 8th
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3031,6 +3056,21 @@ PrefabInstance:
       propertyPath: curtain
       value: 
       objectReference: {fileID: 1499862237}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: Sound1
+      value: 
+      objectReference: {fileID: 1499862238}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 1499862238}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: newScene
+      value: 2-1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3a831690740b1f4e83e54b78be8b686, type: 3}
 --- !u!4 &1436242706 stripped
@@ -3419,6 +3459,12 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1499862235}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1499862238 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2538500019508917574, guid: 062195e069a5b504fac1939925008cf8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1499862235}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1548447238
 GameObject:
   m_ObjectHideFlags: 0
@@ -3553,7 +3599,7 @@ GameObject:
   - component: {fileID: 1586077599}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20420,7 +20466,7 @@ GameObject:
   - component: {fileID: 1710870996}
   m_Layer: 0
   m_Name: Group2 - Quarter
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20693,6 +20739,21 @@ PrefabInstance:
       propertyPath: curtain
       value: 
       objectReference: {fileID: 1499862237}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: Sound1
+      value: 
+      objectReference: {fileID: 1499862238}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 1499862238}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: newScene
+      value: 3-1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3a831690740b1f4e83e54b78be8b686, type: 3}
 --- !u!4 &1778347917 stripped
@@ -20788,6 +20849,21 @@ PrefabInstance:
       propertyPath: curtain
       value: 
       objectReference: {fileID: 1499862237}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: Sound1
+      value: 
+      objectReference: {fileID: 1499862238}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 1499862238}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: newScene
+      value: 4-1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3a831690740b1f4e83e54b78be8b686, type: 3}
 --- !u!4 &1822059800 stripped
