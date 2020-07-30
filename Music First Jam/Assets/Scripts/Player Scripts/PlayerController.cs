@@ -29,6 +29,8 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     bool doubleJump = false;
 
+    public Animator note;
+
     //Health variables
     public int playerHealth = 3;
     bool invincible = false;
@@ -44,16 +46,7 @@ public class PlayerController : MonoBehaviour
     public void Awake()
     {
         buttonInteract.SetActive(false);
-        /*
-        //Trying the new input system. Doesn't work for continuous movement yet so I'm
-        //scrapping the idea
-        controls = new ControllerSupport();
 
-        //repeat this formula for other controls
-        controls.Gameplay.changeInstrument.performed += ctx => ChangeInstruments();
-        controls.Gameplay.leftMove.performed += ctx => moveLeft();
-        controls.Gameplay.rightMove.performed += ctx => moveRight();
-        */
     }
 
     public void Update()
@@ -104,6 +97,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))
         {
             ChangeInstruments();
+            note.SetTrigger("ChangedNote");
         }
 
         if (inDoor == true)

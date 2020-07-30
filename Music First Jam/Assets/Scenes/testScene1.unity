@@ -527,10 +527,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0e7770dcbe6aa43a7973b2d35fd614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
-  spoils: {fileID: 0}
-  damageToPlayer: 0
-  inArena: 0
 --- !u!1 &411434426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,10 +1945,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb0e7770dcbe6aa43a7973b2d35fd614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  spoils: {fileID: 0}
-  damageToPlayer: 1
-  inArena: 0
 --- !u!1 &2018999141
 GameObject:
   m_ObjectHideFlags: 0
@@ -4918,6 +4910,21 @@ PrefabInstance:
         type: 3}
       propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8791442170114442881, guid: 062195e069a5b504fac1939925008cf8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8791442170114442881, guid: 062195e069a5b504fac1939925008cf8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -299.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8791442170114442881, guid: 062195e069a5b504fac1939925008cf8,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 167.8
       objectReference: {fileID: 0}
     - target: {fileID: 9152183996819621206, guid: 062195e069a5b504fac1939925008cf8,
         type: 3}

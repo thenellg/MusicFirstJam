@@ -350,6 +350,7 @@ MonoBehaviour:
   moveSpeed: 40
   buttonInteract: {fileID: 1756572202021969391}
   animator: {fileID: 1756572202007074959}
+  note: {fileID: 7094951490171513064}
   playerHealth: 3
   damage: {r: 0.20784314, g: 0.20784314, b: 0.20784314, a: 255}
   normal: {r: 255, g: 255, b: 255, a: 255}
@@ -1068,3 +1069,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &7094951490171513064 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1010450894152263918, guid: 6748da92e3234c54f8b0449122fdb034,
+    type: 3}
+  m_PrefabInstance: {fileID: 7814734322164219910}
+  m_PrefabAsset: {fileID: 0}
