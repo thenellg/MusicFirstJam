@@ -9,6 +9,8 @@ public class Door : MonoBehaviour
     public bool healthReset = false;
     public GameObject Player;
 
+    public Animator curtain;
+
     public void changeScene()
     {
 
@@ -22,6 +24,13 @@ public class Door : MonoBehaviour
             PlayerPrefs.SetInt("Health", Player.GetComponent<PlayerController>().playerHealth);
         }
 
+        curtain.SetTrigger("curtainDown");
+        Invoke("loading",2.5f);
+    }
+
+    void loading()
+    {
         SceneManager.LoadScene(sceneNumber);
     }
 }
+

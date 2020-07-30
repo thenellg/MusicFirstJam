@@ -13,7 +13,7 @@ public class LevelHub : MonoBehaviour
 
     private void Start()
     {
-        HealthUI.SetActive(false);
+        doorNum = 0;
     }
 
     private void FixedUpdate()

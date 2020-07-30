@@ -109535,6 +109535,11 @@ PrefabInstance:
       propertyPath: OnLandEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3013496358750407892, guid: 062195e069a5b504fac1939925008cf8,
+        type: 3}
+      propertyPath: curtain
+      value: 
+      objectReference: {fileID: 1909730324}
     - target: {fileID: 9152183996569285143, guid: 062195e069a5b504fac1939925008cf8,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -109630,6 +109635,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1909730324 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1443914436952704240, guid: 062195e069a5b504fac1939925008cf8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1909730321}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1909730325 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 72865672574499394, guid: 062195e069a5b504fac1939925008cf8,

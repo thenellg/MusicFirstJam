@@ -7,8 +7,15 @@ public class UI : MonoBehaviour
 {
     public GameObject player;
 
+    public Animator curtain;
+    
     public Image showingHealth;
     public Sprite[] healthOptions = new Sprite[4];
+
+    private void Start()
+    {
+        curtain.SetTrigger("curtainUp");
+    }
 
     void FixedUpdate()
     {
