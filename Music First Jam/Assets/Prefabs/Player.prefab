@@ -350,6 +350,8 @@ MonoBehaviour:
   controller: {fileID: 1756572202007075059}
   moveSpeed: 40
   buttonInteract: {fileID: 1756572202021969391}
+  inDoor: 0
+  curtain: {fileID: 1443914436952704240}
   animator: {fileID: 1756572202007074959}
   note: {fileID: 7094951490171513064}
   playerHealth: 3
@@ -1074,6 +1076,12 @@ MonoBehaviour:
 --- !u!95 &7094951490171513064 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 1010450894152263918, guid: 6748da92e3234c54f8b0449122fdb034,
+    type: 3}
+  m_PrefabInstance: {fileID: 7814734322164219910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1443914436952704240 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8681343528581268726, guid: 6748da92e3234c54f8b0449122fdb034,
     type: 3}
   m_PrefabInstance: {fileID: 7814734322164219910}
   m_PrefabAsset: {fileID: 0}

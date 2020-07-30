@@ -22,6 +22,7 @@ public class CharacterController2D : MonoBehaviour
 
 	public int coyoteTimer = 3;
 	public int numJumps = 0;
+	bool halt = false;
 
 	[Header("Events")]
 	[Space]
@@ -144,7 +145,7 @@ public class CharacterController2D : MonoBehaviour
 			coyoteTimer = 3;
         }
 		// If the player should jump...
-		if ((m_Grounded && jump) || (coyoteTimer > 0 && jump)) 
+		if ((m_Grounded && jump && !halt) || (coyoteTimer > 0 && jump && !halt)) 
 		{
 			if (numJumps < 2)
 			{
@@ -153,17 +154,25 @@ public class CharacterController2D : MonoBehaviour
 
 				if (numJumps == 1)
 				{
-					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce/2));
+					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce * .4f ));
 				}
 				else
 				{
 					m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 				}
 
+				halt = true;
+				Invoke("fixHalt", 0.2f);
+
 				numJumps++;
 			}
 		}
 	}
+
+	void fixHalt()
+    {
+		halt = false;
+    }
 
 	public GameObject child;
 

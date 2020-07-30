@@ -33,7 +33,7 @@ public class LanternTimer : MonoBehaviour
     void counter()
     {
         tempA = darkness.GetComponent<SpriteRenderer>().color;
-        tempA.a = tempA.a + 0.1f;
+        tempA.a = tempA.a + 0.05f;
         darkness.GetComponent<SpriteRenderer>().color = tempA;
 
         if (tempA.a < 1f)

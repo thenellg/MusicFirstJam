@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] bool inDoor = false;
     int sceneChange = 0;
     GameObject door;
+    public Animator curtain;
 
     //Animation variables
     public Animator animator;
@@ -126,7 +127,8 @@ public class PlayerController : MonoBehaviour
 
         if (playerHealth <= 0)
         {
-            GameOver();
+            curtain.SetTrigger("curtainDown");
+            Invoke("GameOver", 2.5f);
         }
     }
 
@@ -157,7 +159,6 @@ public class PlayerController : MonoBehaviour
     void GameOver()
     {
         //Whatever fancy game over stuff
-
         PlayerPrefs.SetInt("Health", 3);
         SceneManager.LoadScene(1);
     }

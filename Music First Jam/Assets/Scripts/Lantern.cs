@@ -7,20 +7,6 @@ public class Lantern : MonoBehaviour
 {
     public GameObject LanternController;
     
-    Color temp, tempA;
-    bool LanternOff;
-
-    private void Start()
-    {
-        Invoke("AddToCounter", 1f);
-    }
-
-    private void Update()
-    {
-        //darkness.GetComponent<SpriteRenderer>().color = darkColor;
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
