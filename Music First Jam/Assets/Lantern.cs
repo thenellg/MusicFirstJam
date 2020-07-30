@@ -1,22 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Lantern : MonoBehaviour
 {
-    public GameObject darkness;
-    Color darkColor;
+    public GameObject LanternController;
+    
+    Color temp, tempA;
     bool LanternOff;
 
     private void Start()
     {
-        darkColor = darkness.GetComponent<SpriteRenderer>().color;
         Invoke("AddToCounter", 1f);
     }
 
     private void Update()
     {
-        darkness.GetComponent<SpriteRenderer>().color = darkColor;
+        //darkness.GetComponent<SpriteRenderer>().color = darkColor;
 
     }
 
@@ -24,24 +25,24 @@ public class Lantern : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            darkColor.a = 0;
-            LanternOff = false;
-            Invoke("resetDarkness", 1f);
+            LanternController.GetComponent<LanternTimer>().startTimer();
         }
     }
 
-    void AddToCounter()
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (LanternOff)
-            darkColor.a = darkColor.a + 0.2f;
-
-        Invoke("AddToCounter", 1f);
-
+        if (collision.gameObject.tag == "Player")
+        {
+            LanternController.GetComponent<LanternTimer>().holdTimer();
+        }
     }
 
-
-    void resetDarkness()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        LanternOff = true;
+        if (collision.gameObject.tag == "Player")
+        {
+            LanternController.GetComponent<LanternTimer>().startTimer();
+        }
     }
+
 }
