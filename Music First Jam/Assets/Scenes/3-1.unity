@@ -109359,7 +109359,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthUI
       value: 
-      objectReference: {fileID: 1909730324}
+      objectReference: {fileID: 0}
     - target: {fileID: 1756572202007074952, guid: 062195e069a5b504fac1939925008cf8,
         type: 3}
       propertyPath: playerHealth
@@ -109620,7 +109620,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1909730323 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 72865670771105742, guid: 062195e069a5b504fac1939925008cf8,
+  m_CorrespondingSourceObject: {fileID: 540074372352116527, guid: 062195e069a5b504fac1939925008cf8,
     type: 3}
   m_PrefabInstance: {fileID: 1909730321}
   m_PrefabAsset: {fileID: 0}
@@ -109628,18 +109628,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1909730324 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 72865671985095654, guid: 062195e069a5b504fac1939925008cf8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1909730321}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1909730325 stripped

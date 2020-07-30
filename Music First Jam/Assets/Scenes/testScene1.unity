@@ -4738,7 +4738,7 @@ PrefabInstance:
         type: 3}
       propertyPath: currentInstrument
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1756572202156929230}
     - target: {fileID: 1756572202007074952, guid: 062195e069a5b504fac1939925008cf8,
         type: 3}
       propertyPath: healthUI
@@ -4932,3 +4932,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1756572202156929228}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1756572202156929230 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 540074372352116527, guid: 062195e069a5b504fac1939925008cf8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1756572202156929228}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
