@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour
     //Health variables
     public int playerHealth = 3;
     bool invincible = false;
-    public TextMeshProUGUI healthUI;
     public Color damage = new Color(121, 121, 121, 255);
     public Color normal = new Color(255, 255, 255, 255);
 
@@ -45,7 +44,6 @@ public class PlayerController : MonoBehaviour
     public void Awake()
     {
         buttonInteract.SetActive(false);
-        playerHealth = PlayerPrefs.GetInt("Health", 3);
         /*
         //Trying the new input system. Doesn't work for continuous movement yet so I'm
         //scrapping the idea
@@ -60,6 +58,7 @@ public class PlayerController : MonoBehaviour
 
     public void Update()
     {
+
         if (knockbackCount <= 0) {
             horizontalMovement = Input.GetAxisRaw("Horizontal") * moveSpeed;
         }
@@ -115,8 +114,6 @@ public class PlayerController : MonoBehaviour
                 door.gameObject.GetComponent<Door>().changeScene();
             }
         }
-
-        healthUI.text = playerHealth.ToString();
 
         if (invincible)
         {

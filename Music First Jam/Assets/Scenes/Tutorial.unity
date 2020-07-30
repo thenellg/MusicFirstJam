@@ -121,18 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &3009996 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 72865671985095654, guid: 062195e069a5b504fac1939925008cf8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1925436554}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &15010645
 GameObject:
   m_ObjectHideFlags: 0
@@ -8267,7 +8255,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthUI
       value: 
-      objectReference: {fileID: 3009996}
+      objectReference: {fileID: 0}
     - target: {fileID: 1756572202007074952, guid: 062195e069a5b504fac1939925008cf8,
         type: 3}
       propertyPath: playerHealth
