@@ -36247,7 +36247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4d40b961baa06044a501a84a9ec6aaf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemiesToKill: 8
+  enemiesToKill: 4
   enemiesKilled: 0
   spawners: []
   gates: {fileID: 403252138}
