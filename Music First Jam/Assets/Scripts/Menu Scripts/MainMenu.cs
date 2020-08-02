@@ -22,6 +22,12 @@ public class MainMenu : MonoBehaviour
         temp.a = 1;
         curtainObject.color = temp;
 
+        PlayerPrefs.SetInt("Graveyard", 0);
+        PlayerPrefs.SetInt("Dining", 0);
+        PlayerPrefs.SetInt("Arcade", 0);
+        PlayerPrefs.SetInt("Library", 0);
+        PlayerPrefs.SetInt("Attic", 0);
+
         curtain.SetTrigger("curtainDown");
         Invoke("loading", 2.5f);
     }

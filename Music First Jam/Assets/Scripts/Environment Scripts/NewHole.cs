@@ -14,6 +14,11 @@ public class NewHole : MonoBehaviour
 
             collision.gameObject.GetComponent<PlayerController>().playerHealth--;
 
+            if (collision.gameObject.GetComponent<PlayerController>().playerHealth <= 0)
+            {
+                collision.gameObject.GetComponent<PlayerController>().GameOver();
+            }
+
             PlayerPrefs.SetInt("Health", collision.gameObject.GetComponent<PlayerController>().playerHealth);
 
             collision.transform.position = warpBackPoint.position;

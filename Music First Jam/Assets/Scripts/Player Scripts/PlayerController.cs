@@ -156,7 +156,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void GameOver()
+    public void GameOver()
     {
         //Whatever fancy game over stuff
         PlayerPrefs.SetInt("Health", 3);

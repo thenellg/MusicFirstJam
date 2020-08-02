@@ -7830,6 +7830,11 @@ PrefabInstance:
       propertyPath: curtain
       value: 
       objectReference: {fileID: 1499862237}
+    - target: {fileID: 7459951144265466974, guid: b3a831690740b1f4e83e54b78be8b686,
+        type: 3}
+      propertyPath: newScene
+      value: 1-2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3a831690740b1f4e83e54b78be8b686, type: 3}
 --- !u!4 &1237614463 stripped
